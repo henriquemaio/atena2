@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Pesquisas">
+    <meta name="author" content="Lemobs">
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <title>Atena</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script src="assets/js/scripts.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+   
+    <header class="login-bar">
+      <form class="navbar-form">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="user" type="text" class="form-control" name="user" value="" placeholder="Usuário">                                        
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Senha">
+        </div> 
+
+        <button type="submit" class="btn login-button">Entrar</button>
+      </form>
+    </header>
+    <nav id="nav" class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="navbar-brand" src="assets/images/logo-atena.png" alt="Atena">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Principal</a></li>
+                    <li><a href="#characteristics">Características</a></li>
+                    <button class="btn" data-toggle="modal" data-target="#contactModal">Contato</button>
+                    <form class="navbar-form login-mobile">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="user" type="text" class="form-control" name="user" value="" placeholder="Usuário">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Senha">
+                        </div>
+
+                        <button type="submit" class="btn login-button">Entrar</button>
+                    </form>
+            
+            </ul>
+            
+        </div>
+        <!--/.nav-collapse -->
+
+        </div>
+    </nav>
+
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Overlay -->
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1">
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Entenda seus clientes</h1>
+                        <h3>Compreenda as necessidades do cliente e encontre os pontos fortes e fracos do seu estabelecimento</h3>
+                    </hgroup>
+                    <!--<button class="btn btn-hero btn-lg" role="button">Saiba mais</button>-->
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-2">
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Bem-vindo ao Atena</h1>
+                        <h3>Uma plataforma para te ajudar a entender e melhorar seus serviços e relacionamento com os clientes</h3>
+                    </hgroup>
+                    <!--<button class="btn btn-hero btn-lg" role="button">Saiba mais</button>-->
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-3">
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Melhore seus serviços</h1>
+                        <h3>Ajuste os seus serviços para melhor atender os clientes e aperfeiçoar o desempenho do seu negócio</h3>
+                    </hgroup>
+                    <!--<button class="btn btn-hero btn-lg" role="button">Saiba mais</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="characteristics" class="characteristics-bg">
+        <div class="container">
+
+            <div class="characteristics-container">
+                <p class="title">Características</p>
+                <hr class="separator">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="caracteristic caracteristic-icon"><img src="assets/images/Checklist2.png"></div>
+                            <div class="caracteristic caracteristic-name">DIVERSOS MODELOS</div>
+                            <span class="center-line"></span>
+                            <div class="caracteristic caracteristic-description">
+                                <span>Escolha entre modelos pensados para o seu Negócio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="caracteristic caracteristic-icon"><img src="assets/images/Check2.png"></div>
+                            <div class="caracteristic caracteristic-name">QUESTÕES CUSTOMIZADAS</div>
+                            <span class="center-line"></span>
+                            <div class="caracteristic caracteristic-description">
+                                <span>Customização das questões para as suas perguntas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="caracteristic caracteristic-icon"><img src="assets/images/Tablet-Chart2.png"></div>
+                            <div class="caracteristic caracteristic-name">RESULTADOS EM TEMPO REAL</div>
+                            <span class="center-line"></span>
+                            <div class="caracteristic caracteristic-description">
+                                <span>Acompanhe os resultados das pesquisas em tempo real</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="caracteristic caracteristic-icon"><img src="assets/images/Bubble2.png"></div>
+                            <div class="caracteristic caracteristic-name">CONSULTORIA</div>
+                            <span class="center-line"></span>
+                            <div class="caracteristic caracteristic-description">
+                                <span>Assistência na elaboração de sua Pesquisa.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="intro-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h4 class="animated slideInDown">
+                  Venha para o Atena
+                </h4>
+
+                        <p>
+                            Conheça um Novo Conceito de Pesquisas de Satisfação para Restaurantes
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <button class="btn border-theme btn-lg" data-toggle="modal" data-target="#contactModal">Fale conosco</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="row section-features">
+        <div class="container">
+        <div class="section-item col-md-6">
+            <img class="img-responsive" src="assets/images/clients.png">
+        </div>
+        <div class="section-item col-md-6 section-text">
+            <p class="title">Conheça seus clientes</p>
+            <p class="section-item-description">Uma estratégia de marketing bem sucedida exige que o
+empreendedor estude e analise o comportamento do cliente
+            através de seus desejos, suas percepções, preferências, etc.</p>
+        </div>
+        </div>
+    </div>
+    
+    <div class="row section-features even ">
+        <div class="container">
+        
+        
+            
+        <div class="section-item col-md-6 col-md-push-6">
+            <img class="img-responsive" src="assets/images/presentation.png">
+        </div>
+            
+        <div class="section-item col-md-6 section-text col-md-pull-6">
+            <p class="title">Melhore suas decisões</p>
+            <p class="section-item-description">Antes de tomar uma decisão deve ser feito um processo de
+análise para tentar diminuir as chances de escolhas erradas
+resultarem em consequências negativas para a empresa.</p>
+        </div>
+            
+        </div>
+    </div>
+    
+    <div class="row section-features">
+        <div class="container">
+        <div class="section-item col-md-6">
+            <img class="img-responsive" src="assets/images/touchtablet.png">
+        </div>
+        <div class="section-item col-md-6 section-text">
+            <p class="title">Compatível com Tablets e Smartphones</p>
+            <p class="section-item-description">Realize suas pesquisas de maneira fácil e dinâmica utilizando o dispositivo móvel de sua preferência</p>
+        </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div class="flex-container">
+            <div class="row display-table">
+                <div class="col-md-3 vcenter separatorRight">
+                    <div class="footer-item"><img class="logo" src="assets/images/Logo-LeMobs-min.png" alt="Logo Lemobs"></div>
+                </div>
+                <div class="col-md-3 vcenter separatorLeft separatorRight">
+                    <div class="footer-item">
+                        <p>Rua Hélio de Almeida, s/n. Incubadora COPPE/UFRJ
+                            <br>Ilha do Fundão, Rio de Janeiro - Rj</p>
+                    </div>
+                </div>
+                <div class="col-md-3 vcenter separatorLeft separatorRight">
+                    <div class="footer-item">
+                        <p><i class="fa fa-envelope"></i> <a href="mailto:faleconosco@lemobs.com.br" class="noDecoration">faleconosco@lemobs.com.br</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 vcenter separatorLeft">
+                    <div class="footer-item">
+                        <p><i class="fa fa-phone"></i> <a href="tel:+552137334163" class="noDecoration">21 3733-4163</a>
+                            <br><i class="fa fa-phone"></i> <a href="tel:+552137334164" class="noDecoration">21 3733-4164</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">© 2016 <span class="separator">|</span> Lemobs <span class="separator">|</span>Todos os direitos reservados.</div>
+                <div class="col-sm-6 pages"><a href="#">Home</a> <span class="separator">|</span><a href="#characteristics">Características</a> <span class="separator">|</span>
+                    <button class="btn" data-toggle="modal" data-target="#contactModal">Contato</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contactModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Fale Conosco</h4></div>
+                <div class="progressForm">
+                    <div class="indeterminate"></div>
+                </div>
+                <div class="modal-body">
+                    <div class="well">Possui alguma dúvida ou comentário? Envie uma mensagem para nós e retornaremos a resposta o mais breve possível.</div>
+                    <form class="form-horizontal" id="contactform" action="http://formspree.io/faleconosco@lemobs.com.br" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Nome</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required autofocus>
+                                <input type="text" name="_gotcha" style="display:none">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label">E-mail</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Endereço de E-mail" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Menssagem</label>
+                            <div class="col-sm-9">
+                                <textarea id="message" name="message" class="form-control" placeholder="Sua mensagem" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-6">
+                                <button id="sendMessage" type="submit" value="Send" class="btn btn-hero" style="margin: 0px">Enviar Menssagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="thanksModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Fale Conosco</h4></div>
+                <div class="modal-body">
+                    <div class="well" style="background-color: #FBFBFB">
+                        <p>Agradecemos o contato e responderemos sua mensagem em breve!</p>
+                        <p>Até logo!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="ebookModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-image: url('assets/images/modalBg3.png')">
+                
+
+                
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+
+
+                        <div class="col-sm-4">
+                            <img src="http://www.180movie.com/wp-content/uploads/changing-hearts-minds-white-background-350x431.png">
+                        </div>
+
+                        <div class="col-sm-8">
+                            <h1 class="text-center"> Ebook <b>Grátis!</b></h1>
+
+                            <div><p class="text-center">Aprenda sobre:</p>
+                                <ol>
+                                   <li>Conhecer melhor o seu cliente</li> 
+                                   <li>Como tomar melhores decisões</li> 
+                                   <li>Fidelizar o cliente</li> 
+                                   <li>Como elaborar melhores perguntas</li> 
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <h4>Receba o ebook e outras informações sobre pesquisas e relacionamento com o cliente</h4>
+                    
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="ebookEmail" placeholder="Escreva aqui o seu Email">
+                        
+                        <button type="submit" class="btn ebook-button">Receber conteúdo gratuitamente</button>
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+</body>
+
+</html>
